@@ -14,22 +14,22 @@
         <div class="container mx-auto px-1 py-0.5">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <img src="{{ asset('img\logo.png') }}" alt="Pejelajah Alam logo" class="h-10 mr-2">
+                    <img src="{{ asset('img\logo.png') }}" alt="Pejelajah Alam logo" class="h-8 mr-2">
                     <span class="text-base font-bold text-teal-500">Penjelajah Alam</span>
                 </div>
-                <div class="hidden md:flex space-x-10 text-base font-bold">
+                <div class="hidden md:flex space-x-8 text-base font-bold">
                     <a href="#home" class="nav-link text-gray-800 hover:text-teal-600 px-1 py-1 rounded-lg">Home</a>
                     <a href="#about" class="nav-link text-gray-800 hover:text-teal-600 px-1 py-1 rounded-lg">About</a>
                     <a href="#activities" class="nav-link text-gray-800 hover:text-teal-600 px-1 py-1 rounded-lg">Activities</a>
                     <a href="#gallery" class="nav-link text-gray-800 hover:text-teal-600 px-1 py-1 rounded-lg">Gallery</a>
                     <a href="#contact" class="nav-link text-gray-800 hover:text-teal-600 px-1 py-1 rounded-lg">Contact</a>
+                    <a href="#join" class="hidden md:block join-btn bg-teal-600 hover:bg-teal-700 text-black px-3 py-1.5 rounded-lg font-bold text-base">Join Us</a>
+                    <button class="md:hidden focus:outline-none nav-link">
+                        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
-                <a href="#join" class="hidden md:block join-btn bg-teal-600 hover:bg-teal-700 text-black px-3 py-1.5 rounded-lg font-bold text-base">Join Us</a>
-                <button class="md:hidden focus:outline-none nav-link">
-                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
             </div>
         </div>
     </nav>
@@ -46,7 +46,7 @@
                     <a href="#activities" class="border-2 border-white hover:bg-white hover:bg-opacity-20 px-6 py-3 rounded-lg font-semibold text-center">Lihat Aktivitas</a>
                 </div>
             </div>
-            <div class="md:w-1/2 flex justify-end pr-1">
+            <div class="md:w-1/2 flex justify-end pr-20">
                 <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/48c11140-e13e-4f90-9276-f87fd7d5d042.png" 
                      alt="Sekelompok pendaki saat matahari terbit di puncak gunung dengan ransel dan tongkat trekking" 
                      class="rounded-lg shadow-xl animate-float">
@@ -55,15 +55,14 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
+    <section id="about" class="py-24 bg-white">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
+            <div class="text-center mb-10">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
             </div>
             <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2
-                 mb-10 md:mb-0 md:pr-16">
-                    <img src="https://i.pinimg.com/originals/cf/b0/62/cfb062150fa38cc6ab940f62f9c90402.jpg" alt="Ecovolunteers planting trees in a rainforest conservation project" class="rounded-lg shadow-lg">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-16">
+                    <img src="https://th.bing.com/th/id/OIP.KUBVtO9B1RqUwzE0jaxgIwHaE8?w=229&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="Ecovolunteers planting trees in a rainforest conservation project" class="rounded-lg h-80 w-full object-cover overflow-hidden">
                 </div>
                 <div class="md:w-1/2">
                     <!-- <h3 class="text-2xl font-semibold text-gray-800 mb-4">Connecting People With Nature</h3> -->
@@ -89,57 +88,51 @@
     </section>
 
     <!-- Activities Section -->
-    <section id="activities" class="py-16 bg-gray-50">
+    <section id="activities" class="py-24 bg-gray-50">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Kegiatan Kami</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-                Dari pendakian akhir pekan hingga ekspedisi beberapa hari, kami menawarkan aktivitas untuk semua tingkat keterampilan.
-            </p>
-            <div class="w-24 h-1 bg-teal-600 mx-auto"></div>
+            <div class="text-center mb-4">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Kegiatan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Dari pendakian akhir pekan hingga ekspedisi beberapa hari, kami menawarkan aktivitas untuk semua tingkat keterampilan.
+                </p>
             </div>
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Activity Card 1 -->
-            <div class="bg-white rounded-xl p-6 shadow-md feature-card transition duration-300">
-                <div class="h-40 mb-4 overflow-hidden rounded-lg">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b4be112-2885-4765-b4df-b583b81b3cf8.png"
-                    alt="Group hiking" class="w-full h-full object-cover">
+                <div class="bg-white rounded-xl p-6 shadow-md feature-card transition duration-300">
+                    <div class="h-40 mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b4be112-2885-4765-b4df-b583b81b3cf8.png" alt="Group hiking" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Pendakian Akhir Minggu</h3>
+                    <p class="text-gray-600 mb-4">Bergabunglah dalam pendakian akhir pekan rutin kami...</p>
+                    <a href="#" class="text-teal-600 font-medium hover:text-teal-800 learn-more-btn"
+                    data-title="Pendakian Akhir Minggu"
+                    data-desc="Nikmati pengalaman mendaki di akhir pekan bersama komunitas kami. Rute mencakup pegunungan lokal, air terjun tersembunyi, dan area alam yang belum banyak dijamah. Cocok untuk pemula maupun pendaki berpengalaman."
+                    data-img="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b4be112-2885-4765-b4df-b583b81b3cf8.png">Learn more →</a>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Pendakian Akhir Minggu</h3>
-                <p class="text-gray-600 mb-4">Bergabunglah dalam pendakian akhir pekan rutin kami...</p>
-                <a href="#" class="text-teal-600 font-medium hover:text-teal-800 learn-more-btn"
-                data-title="Pendakian Akhir Minggu"
-                data-desc="Nikmati pengalaman mendaki di akhir pekan bersama komunitas kami. Rute mencakup pegunungan lokal, air terjun tersembunyi, dan area alam yang belum banyak dijamah. Cocok untuk pemula maupun pendaki berpengalaman."
-                data-img="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b4be112-2885-4765-b4df-b583b81b3cf8.png">Learn more →</a>
-            </div>
-
-            <!-- Activity Card 2 -->
-            <div class="bg-white rounded-xl p-6 shadow-md feature-card transition duration-300">
-                <div class="h-40 mb-4 overflow-hidden rounded-lg">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bb390ea3-4277-4066-b6fb-3d134b6f899d.png"
-                    alt="Camping scene" class="w-full h-full object-cover">
+                
+                <div class="bg-white rounded-xl p-6 shadow-md feature-card transition duration-300">
+                    <div class="h-40 mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bb390ea3-4277-4066-b6fb-3d134b6f899d.png" alt="Camping scene" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Camping Hutan Belantara</h3>
+                    <p class="text-gray-600 mb-4">Pelajari keterampilan bertahan hidup dan nikmati berkemah...</p>
+                    <a href="#" class="text-teal-600 font-medium hover:text-teal-800 learn-more-btn"
+                    data-title="Camping Hutan Belantara"
+                    data-desc="Pelajari keterampilan bertahan hidup di alam liar dan habiskan malam di bawah bintang-bintang bersama pemandu berpengalaman. Kegiatan ini cocok bagi kamu yang ingin melepas penat dan menyatu dengan alam."
+                    data-img="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bb390ea3-4277-4066-b6fb-3d134b6f899d.png">Learn more →</a>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Camping Di Hutan Belantara</h3>
-                <p class="text-gray-600 mb-4">Pelajari keterampilan bertahan hidup dan nikmati berkemah...</p>
-                <a href="#" class="text-teal-600 font-medium hover:text-teal-800 learn-more-btn"
-                data-title="Camping Hutan Belantara"
-                data-desc="Pelajari keterampilan bertahan hidup di alam liar dan habiskan malam di bawah bintang-bintang bersama pemandu berpengalaman. Kegiatan ini cocok bagi kamu yang ingin melepas penat dan menyatu dengan alam."
-                data-img="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bb390ea3-4277-4066-b6fb-3d134b6f899d.png">Learn more →</a>
-            </div>
-
-            <!-- Activity Card 3 -->
-            <div class="bg-white rounded-xl p-6 shadow-md feature-card transition duration-300">
-                <div class="h-40 mb-4 overflow-hidden rounded-lg">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6e0bb3c6-1ed9-42cd-a417-0b315a85d43e.png"
-                    alt="Beach cleanup" class="w-full h-full object-cover">
+                
+                <div class="bg-white rounded-xl p-6 shadow-md feature-card transition duration-300">
+                    <div class="h-40 mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6e0bb3c6-1ed9-42cd-a417-0b315a85d43e.png" alt="Beach cleanup" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Proyek Konservasi</h3>
+                    <p class="text-gray-600 mb-4">Berpartisipasilah dalam upaya konservasi kami...</p>
+                    <a href="#" class="text-teal-600 font-medium hover:text-teal-800 learn-more-btn"
+                    data-title="Proyek Konservasi"
+                    data-desc="Bergabunglah dalam proyek pelestarian lingkungan seperti pembersihan pantai, penanaman pohon, dan monitoring satwa liar. Jadilah bagian dari perubahan nyata untuk bumi yang lebih baik."
+                    data-img="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6e0bb3c6-1ed9-42cd-a417-0b315a85d43e.png">Learn more →</a>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Proyek Konservasi</h3>
-                <p class="text-gray-600 mb-4">Berpartisipasilah dalam upaya konservasi kami...</p>
-                <a href="#" class="text-teal-600 font-medium hover:text-teal-800 learn-more-btn"
-                data-title="Proyek Konservasi"
-                data-desc="Bergabunglah dalam proyek pelestarian lingkungan seperti pembersihan pantai, penanaman pohon, dan monitoring satwa liar. Jadilah bagian dari perubahan nyata untuk bumi yang lebih baik."
-                data-img="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6e0bb3c6-1ed9-42cd-a417-0b315a85d43e.png">Learn more →</a>
-            </div>
             </div>
         </div>
     </section>
@@ -155,12 +148,12 @@
     </div>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
+    <section id="gallery" class="py-24 bg-white">
+        <div class="container mx-auto px-8">
+            <div class="text-center mb-4">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Petualangan Kami</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Jelajahi momen dari ekspedisi dan acara komunitas kami.</p>
-                <div class="w-24 h-1 bg-teal-600 mx-auto"></div>
+                <!-- <div class="w-16 h-1 bg-teal-600 mx-auto"></div> -->
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div class="rounded-lg overflow-hidden h-48">
@@ -211,7 +204,7 @@
     </section>
 
     <!-- Join Section -->
-    <section id="join" class="py-16 bg-gray-50">
+    <section id="join" class="py-24 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Bergabunglah dengan Komunitas Kami</h2>
@@ -310,7 +303,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-50">
+    <section id="contact" class="py-24 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-12">
